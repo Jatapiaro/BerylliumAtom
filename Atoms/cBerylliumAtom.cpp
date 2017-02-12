@@ -14,10 +14,6 @@ BerylliumAtom::BerylliumAtom(){
         this->electrons[i] = new ProtoElectron(2);
     }
     
-    for(int i=0;i<4;i++){
-        this->rrrr[i] = new ProtoElectron(1);
-    }
-    
     for(int i = 0; i < 360; i ++){
         float angle;
         angle = 0.0174533f * (float)i;
