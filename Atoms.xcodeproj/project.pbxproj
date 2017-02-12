@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C07066681E500B0600AD2FB3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C07066671E500B0600AD2FB3 /* main.cpp */; };
+		C07066761E500CCC00AD2FB3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07066731E500CCC00AD2FB3 /* GLKit.framework */; };
+		C07066771E500CCC00AD2FB3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07066741E500CCC00AD2FB3 /* GLUT.framework */; };
+		C07066781E500CCC00AD2FB3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07066751E500CCC00AD2FB3 /* OpenGL.framework */; };
+		C070667A1E500CFB00AD2FB3 /* cProtoElectron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C07066791E500CFB00AD2FB3 /* cProtoElectron.cpp */; };
+		C07066801E502E3600AD2FB3 /* cCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C070667F1E502E3600AD2FB3 /* cCore.cpp */; };
+		C07066831E5065CE00AD2FB3 /* cBerylliumAtom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C07066821E5065CE00AD2FB3 /* cBerylliumAtom.cpp */; };
+		C07066891E50700000AD2FB3 /* cPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C07066881E50700000AD2FB3 /* cPoint.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,17 @@
 /* Begin PBXFileReference section */
 		C07066641E500B0600AD2FB3 /* Atoms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Atoms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07066671E500B0600AD2FB3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C070666F1E500C2600AD2FB3 /* cProtoElectron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cProtoElectron.h; sourceTree = "<group>"; };
+		C07066731E500CCC00AD2FB3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C07066741E500CCC00AD2FB3 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		C07066751E500CCC00AD2FB3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C07066791E500CFB00AD2FB3 /* cProtoElectron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cProtoElectron.cpp; sourceTree = "<group>"; };
+		C070667D1E50159500AD2FB3 /* cBerylliumAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cBerylliumAtom.h; sourceTree = "<group>"; };
+		C070667E1E502D6B00AD2FB3 /* cCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cCore.h; sourceTree = "<group>"; };
+		C070667F1E502E3600AD2FB3 /* cCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cCore.cpp; sourceTree = "<group>"; };
+		C07066821E5065CE00AD2FB3 /* cBerylliumAtom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cBerylliumAtom.cpp; sourceTree = "<group>"; };
+		C07066871E506FCD00AD2FB3 /* cPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cPoint.h; sourceTree = "<group>"; };
+		C07066881E50700000AD2FB3 /* cPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cPoint.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07066761E500CCC00AD2FB3 /* GLKit.framework in Frameworks */,
+				C07066771E500CCC00AD2FB3 /* GLUT.framework in Frameworks */,
+				C07066781E500CCC00AD2FB3 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +62,10 @@
 		C070665B1E500B0500AD2FB3 = {
 			isa = PBXGroup;
 			children = (
+				C070666E1E500B3300AD2FB3 /* header */,
 				C07066661E500B0600AD2FB3 /* Atoms */,
 				C07066651E500B0600AD2FB3 /* Products */,
+				C07066721E500CCC00AD2FB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +81,33 @@
 			isa = PBXGroup;
 			children = (
 				C07066671E500B0600AD2FB3 /* main.cpp */,
+				C07066791E500CFB00AD2FB3 /* cProtoElectron.cpp */,
+				C070667F1E502E3600AD2FB3 /* cCore.cpp */,
+				C07066821E5065CE00AD2FB3 /* cBerylliumAtom.cpp */,
+				C07066881E50700000AD2FB3 /* cPoint.cpp */,
 			);
 			path = Atoms;
+			sourceTree = "<group>";
+		};
+		C070666E1E500B3300AD2FB3 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				C070666F1E500C2600AD2FB3 /* cProtoElectron.h */,
+				C070667D1E50159500AD2FB3 /* cBerylliumAtom.h */,
+				C070667E1E502D6B00AD2FB3 /* cCore.h */,
+				C07066871E506FCD00AD2FB3 /* cPoint.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		C07066721E500CCC00AD2FB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07066731E500CCC00AD2FB3 /* GLKit.framework */,
+				C07066741E500CCC00AD2FB3 /* GLUT.framework */,
+				C07066751E500CCC00AD2FB3 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07066831E5065CE00AD2FB3 /* cBerylliumAtom.cpp in Sources */,
+				C070667A1E500CFB00AD2FB3 /* cProtoElectron.cpp in Sources */,
+				C07066891E50700000AD2FB3 /* cPoint.cpp in Sources */,
+				C07066801E502E3600AD2FB3 /* cCore.cpp in Sources */,
 				C07066681E500B0600AD2FB3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
